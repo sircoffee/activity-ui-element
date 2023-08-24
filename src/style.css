@@ -1,0 +1,93 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    --dark-bg: rgb(35, 41, 51);
+    --gray-100: rgb(58, 67, 84);
+    --gray-125: rgb(111, 125, 152);
+    --gray-150: rgb(171, 180, 197);
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-color: var(--dark-bg);    
+
+
+    padding: 28px;
+    border-radius: 28px;
+
+    width: 18rem;
+    height: 30rem;
+
+    color: var(--gray-150);
+}
+@keyframes an {
+    0% {
+        filter: blur(20px);
+
+
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+}
+
+.options {
+    transition: .5s;
+}
+
+.options:hover  {
+    transition: .5s;
+    background-color: rgba(84, 84, 84, 0.367);
+
+    border-radius: 2rem;
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
+}
+
+.divider {
+    height: 2px;
+    width: 18rem;
+
+    background-color: var(--gray-100);
+}
+
+.bars {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.d1 {
+    height: 18rem;
+    width: 20px;
+
+    border-radius: 20px;
+
+    background-color: var(--gray-100);
+    animation: an 1s;
+}
+
+p {
+    margin: 0;
+}
+
+.total-today {
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+}
+
+.description {
+    margin: 0 0 1rem 0;
+    color: var(--gray-125);
+}
